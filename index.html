@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>P-E bio</title>
+	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+	<link href="css/magnific-popup.min.css" rel="stylesheet">
+    <link href="css/tooplate-style.css" rel="stylesheet">
+<!--
+
+Tooplate 2122 Nano Folio
+
+https://www.tooplate.com/view/2122-nano-folio
+
+-->
+</head>
+<body>
+	
+		</section>
+
+		<section class="tm-about tm-mb-80 tm-p-50 tm-bgcolor-2 tm-border-rounded">
+			<div class="tm-about-header tm-flex-center">
+				<i class="fas fa-users fa-2x"></i>
+				<h2>Poyraz Bilgici</h2>
+			</div>
+			<div class="tm-about-text">
+				<p class="tm-mb-40">Hi, I'm Poyraz.i'm 16, I'm going to high school.I play football as an amateur.i got my swimming license at the age of 12 and my football license at 14 take .My brother is a software specialist, I decided to start software after seeing him, and I'm interested in software at the moment, So  continue my career with software .My university department goal is to study English language and literature .I was normally in technology college but I decided to transfer to Antalya high school this year and I will continue my high school life there  .I'm moving forward by following my brother's example in my career, I'm aiming to go by putting on top of what he did at that time.Currently, I have 3 different responsibilities as a sports, high school,software actively and I am trying to overcome them all  .I would have liked to stay longer and chat, but for now  finishing I will see you on the better next projects under such better conditions. Take care of yourself..</p>
+		</section>
+		<section class="tm-about tm-mb-80 tm-p-50 tm-bgcolor-2 tm-border-rounded">
+			<div class="tm-about-header tm-flex-center">
+				<i class="fas fa-users fa-2x"></i>
+				<h2>Basri Efe Özdemir</h2>
+			</div>
+			<div class="tm-about-text">
+				<p class="tm-mb-40">Hello, I'm Basri Efe but I prefer to use efe. I am 16 years old and my school is Technology High School, my 3rd year in high school. I'm doing well in my classes this year. Actually, I don't study for my classes, but my grades are still good.
+					I like to spend time in front of the computer and my friend's brother told us to work on some software, our family took us to the course.
+					Actually, I'm good with courses. I went to a 3 year English course and passed the C2 level successfully, I was also bored at first, but when we started to understand things and make new friends, we started to enjoy the course and we continue to improve by working. . I would like to stay longer and chat but for now it would be better to discuss the next projects, take care</p>
+				
+			</div>
+		</section>
+
+
+		
+			
+
+		<section class="tm-contact tm-mb-50 tm-bgcolor-3 tm-border-rounded">
+			<div class="tm-contact-header tm-flex-center">
+				<i class="fas fa-map-pin fa-3x"></i>
+				<h2>Contact</h2>
+			</div>
+			<div class="tm-contact-info">
+				<address class="tm-mb-30">
+				Antalya Muratpaşa Işıklar
+				</address>
+				<div class="tm-text-white tm-mb-40">Tel: <a href="tel:0 546 157 07 23" class="tm-link-white">0 546 157 07 23</a></div>
+				<div class="tm-flex">
+					
+				</div>
+			</div>
+			<div class="tm-contact-form-container">
+				<form id="contact-form" action="" method="POST" class="tm-contact-form">
+		          	<input type="text" name="name" placeholder="name" required="" />
+		          	<input type="email" name="email" placeholder="email" required="" />
+		          	<textarea rows="5" name="message" class="tm-mb-30" placeholder="message" required=""></textarea>		          	
+		          	<button type="submit" class="tm-right tm-btn-submit">send</button>          	
+		        </form>    
+			</div>
+		</section>
+
+		<footer class="tm-footer">
+			Directed by P-E <a rel="sponsored" href="https://www.tooplate.com" class="tm-link-gray"></a>
+		</footer>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script>
+		$(function(){
+		  	// Init the image gallery
+		  	var $gallery = $(".tm-gallery").isotope({
+		    	itemSelector: ".tm-gallery-item",
+		    	layoutMode: "fitRows"
+		  	});
+		  
+		  	// Layout Isotope after each image loads
+		  	$gallery.imagesLoaded().progress(function() {
+		    	$gallery.isotope("layout");
+		  	});
+
+		  	$(".filters-button-group").on("click", "a", function(e) {
+		  		e.preventDefault();
+			    var filterValue = $(this).attr("data-filter");
+			    $gallery.isotope({ filter: filterValue });
+			    $('.filters-button-group a').removeClass('active');
+			    $(this).addClass('active');
+			});
+
+		  	// Magnific Pop up
+		  	$('.tm-gallery').magnificPopup({
+		  		delegate: 'a',
+			  	type: 'image',
+				  gallery: { enabled: true }
+			});
+		});
+	</script>
+</body>
+</html>
